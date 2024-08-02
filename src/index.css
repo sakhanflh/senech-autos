@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.w-half {
+    width: 46%;
+}
+
+.reviewImg {
+    @media(min-width: 768px){
+        background:
+        linear-gradient(
+            to right ,
+            rgb(23 37 84 / 0.9),
+            rgb(0 0 0 / 0)
+        ),
+        url(/img/Shake-hand.jpg);
+        background-size: cover;
+    }
+}
+
+.reviewImgMobile {
+    @media(max-width: 767px){
+        background:
+        linear-gradient(to top , rgb(23 37 84 / 1), rgb(0 0 0 / 0)
+        ),
+        url(/img/Shake-hand.jpg);
+        background-size: cover;
+    }
+}
+
+.bgShadowMobile {
+    @media(max-width: 767px){
+        background: linear-gradient(to top , rgb(23 37 84 / 1), rgb(0 0 0 / 0)
+        )
+    }
+}
+.bgShadow {
+    @media(min-width: 768px){
+        background: linear-gradient(to top , rgb(23 37 84 / 0), rgb(0 0 0 / 0)
+        )
+    }
+}
