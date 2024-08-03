@@ -5,7 +5,7 @@ interface iconProps {
 const SenechIcon = ({ style }: iconProps) => {
     return (
         <div className={style}>
-            <img src="/img/Senech-blue.png" alt="senech icon" className="object-cover w-full h-full" />
+            <img src="/img/senech autos[blue, white].png" alt="senech icon" className="object-cover w-full h-full" />
         </div>
     )
 }

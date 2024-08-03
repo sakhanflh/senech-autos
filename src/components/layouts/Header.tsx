@@ -18,13 +18,13 @@ const Header = () => {
                 />
                 <Navbar
                     styleParent={'hidden xl:flex gap-5'}
-                    styleChild={'text-primary font-medium'}
+                    styleChild={'text-dark hover:text-tertiary font-medium'}
                 />
                 <p className="xl:hidden text-lg font-bold text-tertiary ml-3">Senech Autos.</p>
             </div>
 
             <div className="flex items-center gap-2">
-                <CiHeart className="text-2xl xl:text-3xl"/>
+                <CiHeart className="text-2xl xl:text-3xl text-dark"/>
                 <Login
                 styleParent={'hidden'}
                 />

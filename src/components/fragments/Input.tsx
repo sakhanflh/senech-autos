@@ -23,8 +23,8 @@ const Input: React.FC<InputProps> = ({ label, type = 'text', placeholder, value,
     };
 
     return (
-        <div className={`relative ${styleParent}`}>
-            {label && <label className="block text-gray-700 text-sm font-bold mb-2">{label}</label>}
+        <div className={`relative text-dark ${styleParent}`}>
+            {label && <label className="block text-sm font-bold mb-2">{label}</label>}
             {type === 'select' ? (
                 <div className="relative">
                     <select
@@ -32,7 +32,7 @@ const Input: React.FC<InputProps> = ({ label, type = 'text', placeholder, value,
                         onChange={onChange}
                         name={name}
                         onClick={handleToggle}
-                        className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline pr-10"
+                        className="shadow appearance-none border rounded w-full py-3 px-3 text-dark leading-tight focus:outline-none focus:shadow-outline pr-10"
                     >
                         {options?.map((option) => (
                             <option key={option.value} className='text-sm overflow-scroll' value={option.value}>
@@ -55,7 +55,7 @@ const Input: React.FC<InputProps> = ({ label, type = 'text', placeholder, value,
                     onChange={onChange}
                     name={name}
                     checked={type === 'checkbox' || type === 'radio' ? checked : undefined}
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-dark leading-tight focus:outline-none focus:shadow-outline"
                 />
             )}
         </div>
