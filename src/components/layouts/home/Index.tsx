@@ -1,8 +1,8 @@
 import HomeRating from "../../fragments/HomeRating";
 import SearchFilter from "../../fragments/SearchFilter";
 import UtilityQa from "../../elements/utility/UtilityQa";
+import CategorySlider from "./CategorySlider";
 import DiscCard from "../../elements/Card/DiscCard";
-import CarCategory from "../../elements/Card/CarCategory";
 
 const Index = () => {
     return (
@@ -22,11 +22,15 @@ const Index = () => {
                 </div>
             </div>
 
-            <div className="p-[5%] xl:mt-24 mt-60">
+            <div className="pl-[5%] xl:mt-32 mt-60">
                 <h1 className="xl:text-4xl text-xl font-bold">Popular at Senech Auto's</h1>
                 <div className="xl:mt-10 mt-5 flex">
-                    <DiscCard />
-                    <CarCategory/>
+                    <div>
+                        <DiscCard/>
+                    </div>
+                    <div className="w-full">
+                        <CategorySlider />
+                    </div>
                 </div>
             </div>
         </main>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Swiper, SwiperSlide, SwiperProps } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css';
 
 interface SliderProps {
     slides: React.ReactNode[];
