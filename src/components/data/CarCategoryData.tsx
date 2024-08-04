@@ -5,7 +5,7 @@ export const CarCategoryData = [
         'link': ''
     },
     {
-        'type': 'Family Car',
+        'type': 'Family',
         'image': '/image/FamilyCar.png',
         'link': ''
     },

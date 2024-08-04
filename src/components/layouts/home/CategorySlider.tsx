@@ -29,7 +29,7 @@ const CategorySlider: React.FC = () => {
     const slides = [
         ...data.map((cat, i) => (
             <SwiperSlide key={i}>
-                <div className="xl:mx-2 mx-20">
+                <div className="xl:mx-2 mr-5 xl:mr-0">
                     <CarCategory
                         type={cat.type}
                         image={cat.image}
@@ -42,24 +42,31 @@ const CategorySlider: React.FC = () => {
 
     const settings = {
         modules: [Navigation, Pagination, Scrollbar, A11y],
-        spaceBetween: 10,
         loop: true,
         navigation: {
             prevEl: '.custom-prev',
             nextEl: '.custom-next',
         },
         breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 1,
+            },
             640: {
                 slidesPerView: 2,
+                spaceBetween: 1,
             },
             768: {
                 slidesPerView: 2,
+                spaceBetween: 1,
             },
             1024: {
                 slidesPerView: 3,
+                spaceBetween: 10,
             },
             1280: {
                 slidesPerView: 4,
+                spaceBetween: 10,
             },
         }
     };
