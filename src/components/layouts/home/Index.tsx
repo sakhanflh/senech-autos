@@ -3,8 +3,12 @@ import SearchFilter from "../../fragments/SearchFilter";
 import UtilityQa from "../../elements/utility/UtilityQa";
 import CategorySlider from "./CategorySlider";
 import DiscCard from "../../elements/Card/DiscCard";
+import CustomNavigation from "../../elements/Button/CustomNavigation";
+import { useRef } from "react";
+import { SwiperClass } from "swiper/react";
 
 const Index = () => {
+    const swiperRef = useRef<SwiperClass | null>(null);
     return (
         <main>
             <div className="w-full flex flex-col gap-10 pt-28 p-[5%] h-96 text-white reviewImgMobile lg:w-full  lg:h-[40rem] xl:h-[40rem] reviewImg xl:w-full ">
@@ -22,13 +26,17 @@ const Index = () => {
                 </div>
             </div>
 
-            <div className="pl-[5%] xl:mt-32 mt-60">
+            <div className="xl:pl-[5%] xl:px-0 px-[5%] xl:mt-32 mt-60">
                 <h1 className="xl:text-4xl text-xl font-bold">Popular at Senech Auto's</h1>
-                <div className="xl:mt-10 mt-5 flex">
-                    <div>
-                        <DiscCard/>
+                <div className="xl:mt-10 mt-5 flex flex-col xl:flex-row justify-center items-center">
+                    <div className="">
+                        <DiscCard />
                     </div>
-                    <div className="w-full">
+                    <div className="w-full mt-5 xl:mt-0 overflow-x-hidden">
+                        <CustomNavigation
+                            onPrevClick={() => swiperRef.current?.slidePrev()}
+                            onNextClick={() => swiperRef.current?.slideNext()}
+                        />
                         <CategorySlider />
                     </div>
                 </div>

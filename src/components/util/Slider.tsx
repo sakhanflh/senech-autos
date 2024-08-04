@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Swiper, SwiperSlide, SwiperProps } from 'swiper/react';
+import { Swiper as SwiperClass } from 'swiper/types';
 
 interface SliderProps {
     slides: React.ReactNode[];
     settings: SwiperProps;
 }
 
-const Slider: React.FC<SliderProps> = ({ slides, settings }) => {
+const Slider = forwardRef<SwiperClass, SliderProps>(({ slides, settings }, ref) => {
     return (
-        <Swiper {...settings}>
+        <Swiper {...settings} ref={ref as any}>
             {slides.map((slideContent, i) => (
                 <SwiperSlide key={i}>
                     {slideContent}
@@ -16,6 +17,6 @@ const Slider: React.FC<SliderProps> = ({ slides, settings }) => {
             ))}
         </Swiper>
     );
-};
+});
 
 export default Slider;

@@ -24,4 +24,9 @@ export const CarCategoryData = [
         'image': '/image/SportCar.png',
         'link': ''
     },
+    {
+        'type': 'Luxury',
+        'image': '/image/LuxuryCar.png',
+        'link': ''
+    },
 ]
