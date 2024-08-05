@@ -10,7 +10,7 @@ import UtilityQa from "../../elements/utility/UtilityQa";
 const Index = () => {
     const swiperRef = useRef<SwiperClass | null>(null);
     return (
-        <main>
+        <main className="flex flex-col">
             <div className="w-full flex flex-col gap-10 pt-28 p-[5%] h-96 text-white reviewImgMobile lg:w-full  lg:h-[40rem] xl:h-[40rem] reviewImg xl:w-full ">
                 <div className="xl:w-[40rem] ">
                     <h1 className="xl:text-[41px] text-[23px] font-semibold">You choose your car online. We inspect it and deliver it.</h1>
@@ -21,12 +21,12 @@ const Index = () => {
                 <div className="ml-10">
                     <HomeRating />
                 </div>
-                <div className="flex">
-                    <UtilityQa />
-                </div>
+            </div>
+            <div className="flex mt-60 p-5">
+                <UtilityQa />
             </div>
 
-            <div className="xl:pl-[5%] xl:px-0 px-[5%] xl:mt-32 mt-60 hidden">
+            <div className="xl:pl-[5%] xl:px-0 px-[5%] xl:mt-32">
                 <h1 className="xl:text-4xl text-xl font-bold">Popular at Senech Auto's</h1>
                 <div className="xl:mt-10 mt-5 flex flex-col xl:flex-row justify-center items-center">
                     <div className="">
