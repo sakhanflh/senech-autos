@@ -1,11 +1,11 @@
 import HomeRating from "../../fragments/HomeRating";
 import SearchFilter from "../../fragments/SearchFilter";
-import UtilityQa from "../../elements/utility/UtilityQa";
 import CategorySlider from "./CategorySlider";
 import DiscCard from "../../elements/Card/DiscCard";
 import CustomNavigation from "../../elements/Button/CustomNavigation";
 import { useRef } from "react";
 import { SwiperClass } from "swiper/react";
+import UtilityQa from "../../elements/utility/UtilityQa";
 
 const Index = () => {
     const swiperRef = useRef<SwiperClass | null>(null);
@@ -21,12 +21,12 @@ const Index = () => {
                 <div className="ml-10">
                     <HomeRating />
                 </div>
-                <div className="hidden xl:flex">
+                <div className="flex">
                     <UtilityQa />
                 </div>
             </div>
 
-            <div className="xl:pl-[5%] xl:px-0 px-[5%] xl:mt-32 mt-60">
+            <div className="xl:pl-[5%] xl:px-0 px-[5%] xl:mt-32 mt-60 hidden">
                 <h1 className="xl:text-4xl text-xl font-bold">Popular at Senech Auto's</h1>
                 <div className="xl:mt-10 mt-5 flex flex-col xl:flex-row justify-center items-center">
                     <div className="">

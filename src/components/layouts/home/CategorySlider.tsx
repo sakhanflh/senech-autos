@@ -29,7 +29,7 @@ const CategorySlider: React.FC = () => {
     const slides = [
         ...data.map((cat, i) => (
             <SwiperSlide key={i}>
-                <div className="xl:mx-2 mr-5 xl:mr-0">
+                <div className="xl:mx-2 -ml-4 xl:mr-0">
                     <CarCategory
                         type={cat.type}
                         image={cat.image}

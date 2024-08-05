@@ -22,7 +22,7 @@ const CarCategory = ({ image, type, link }: DataProps) => {
     };
 
     return (
-        <div className={`xl:h-44 h-40 overflow-hidden border justify-center items-center p-5 flex flex-col rounded-lg ml-5 transition-all duration-300 ${isHovered ? 'border-tertiary shadow-xl' : 'border-slate-300 shadow-sm'}`}
+        <div className={`xl:h-44 w-40 xl:w-auto h-40 overflow-hidden border justify-center items-center p-5 flex flex-col rounded-lg ml-5 transition-all duration-300 ${isHovered ? 'border-tertiary shadow-xl' : 'border-slate-300 shadow-sm'}`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >

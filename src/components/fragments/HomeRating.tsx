@@ -3,9 +3,9 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const HomeRating = () => {
     return (
-        <div className="flex items-center gap-2">
-            <p className="text-3xl font-bold">4.8</p>
-            <span className="flex text-xl text-yellow-400">
+        <div className="flex items-center gap-2 text-primary xl:text-white">
+            <p className="xl:text-3xl font-bold text-xl">4.8</p>
+            <span className="flex xl:text-xl text-yellow-400">
                 <FaStar />
                 <FaStar />
                 <FaStar />
