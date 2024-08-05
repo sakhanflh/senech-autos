@@ -22,11 +22,11 @@ const Index = () => {
                     <HomeRating />
                 </div>
             </div>
-            <div className="flex mt-60 p-5">
+            <div className="flex mt-56 xl:mt-0 p-5">
                 <UtilityQa />
             </div>
 
-            <div className="xl:pl-[5%] xl:px-0 px-[5%] xl:mt-32">
+            <div className="xl:pl-[5%] xl:px-0 px-[5%]">
                 <h1 className="xl:text-4xl text-xl font-bold">Popular at Senech Auto's</h1>
                 <div className="xl:mt-10 mt-5 flex flex-col xl:flex-row justify-center items-center">
                     <div className="">

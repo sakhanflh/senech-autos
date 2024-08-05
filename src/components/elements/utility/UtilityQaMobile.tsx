@@ -25,7 +25,7 @@ const qaData = [
         answer: (
             <div className="text-xs flex flex-col gap-2">
                 <p><span className="font-semibold">Senech Auto’s is the safest way of buying a used car.</span> Before each purchase we first of all carefully examine the chosen car and <span className="font-semibold">you then decide on the basis of its current condition </span> and our recommendation.</p>
-                <p>You always sign the contract with Carvago, so <span className="font-semibold">all guarantees are provided by us - you only need to buy the car, in your native language.</span></p>
+                <p>You always sign the contract with Senech Auto`s, so <span className="font-semibold">all guarantees are provided by us - you only need to buy the car, in your native language.</span></p>
                 <p>Wherever the car is from, you always make the payment to a local account in your local currency.</p>
             </div>
         ),
@@ -52,7 +52,7 @@ const UtilityQaMobile = () => {
     };
 
     return (
-        <div className="rounded-xl overflow-hidden text-dark bg-slate-100 flex flex-col w-full">
+        <div className="rounded-xl overflow-hidden shadow text-dark bg-slate-100 flex flex-col w-full">
             {qaData.map(({ id, icon, title, question, answer }) => (
                 <div key={id} className="flex flex-col">
                     <div

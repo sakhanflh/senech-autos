@@ -4,7 +4,7 @@ import CarCategory from '../../elements/Card/CarCategory';
 import Slider from '../../util/Slider';
 import { SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperClass } from 'swiper';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -41,12 +41,13 @@ const CategorySlider: React.FC = () => {
     ];
 
     const settings = {
-        modules: [Navigation, Pagination, Scrollbar, A11y],
+        modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
         loop: true,
         navigation: {
             prevEl: '.custom-prev',
             nextEl: '.custom-next',
         },
+        autoplay: true,
         breakpoints: {
             0: {
                 slidesPerView: 2,
