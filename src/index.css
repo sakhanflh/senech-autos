@@ -41,3 +41,11 @@
         )
     }
 }
+
+/* Section How Does It Works */
+.clip-triangle {
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+    background-color :rgb(239 246 255);
+    height: 70rem;
+}
+/* Section How Does It Works End */

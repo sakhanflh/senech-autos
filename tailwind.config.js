@@ -17,6 +17,7 @@ export default {
         'dark': 'rgb(23 37 84)',
         'BlueCar': '#337CCF',
         'RedCar': '#dc2626',
+        'clip': '#F5F7FB',
       }
     },
   },

@@ -6,6 +6,7 @@ import CustomNavigation from "../../elements/Button/CustomNavigation";
 import { useRef } from "react";
 import { SwiperClass } from "swiper/react";
 import UtilityQa from "../../elements/utility/UtilityQa";
+import HowDoesCard from "./HowDoesCard";
 
 const Index = () => {
     const swiperRef = useRef<SwiperClass | null>(null);
@@ -26,9 +27,9 @@ const Index = () => {
                 <UtilityQa />
             </div>
 
-            <div className="xl:pl-[5%] xl:px-0 px-[5%]">
+            <section className="xl:pl-[5%] xl:px-0 px-[5%]">
                 <h1 className="xl:text-4xl text-xl font-bold">Popular at Senech Auto's</h1>
-                <div className="xl:mt-10 mt-5 flex flex-col xl:flex-row justify-center items-center">
+                <div className="xl:mt-10 mt-5 flex flex-col xl:flex-row justify-center items-center relative">
                     <div className="">
                         <DiscCard />
                     </div>
@@ -40,7 +41,19 @@ const Index = () => {
                         <CategorySlider />
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section className="mt-32 clip-triangle">
+                <div className="flex flex-col justify-center items-center mt-40 xl:mt-40">
+                    <h1 className="xl:text-4xl text-2xl font-bold z-50">How does it work?</h1>
+                    <div className="w-full my-10 xl:mt-0 overflow-x-hidden">
+                        <HowDoesCard />
+                    </div>
+                    <button className="font-semibold bg-gradient-to-l from-dark to-secondary hover:to-secondary hover:from-secondary py-3 px-8 rounded-lg text-white">
+                        Want to know more?
+                    </button>
+                </div>
+            </section>
         </main>
     )
 }
