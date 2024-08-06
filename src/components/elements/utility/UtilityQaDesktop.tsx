@@ -1,7 +1,7 @@
 import { GiReceiveMoney } from "react-icons/gi";
 import { AiOutlineSafety } from "react-icons/ai";
 import { BsAward } from "react-icons/bs";
-import { FaPlusCircle, FaMinusCircle } from "react-icons/fa";
+import { FaPlusCircle } from "react-icons/fa";
 import { useState } from "react";
 
 const UtilityQaDesktop = () => {
