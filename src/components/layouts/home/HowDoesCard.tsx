@@ -15,21 +15,21 @@ const HowDoesCard = () => {
             number: '01.',
             heading: 'Choose anywhere in Europe',
             desc: 'No more compromises! With us, you have an unrivaled selection of cars in one place.',
-            img: 'public/img/how-it-works-mobile-1-2x.webp',
+            img: '/img/how-it-works-mobile-1-2x.webp',
         },
         {
             id: 2,
             number: '02.',
             heading: 'We`ll inspect the car closely',
             desc: 'A certified mechanic will thoroughly inspect your car. You will decide according to the result after.',
-            img: 'public/img/how-it-works-mobile-2-2x.webp'
+            img: '/img/how-it-works-mobile-2-2x.webp'
         },
         {
             id: 3,
             number: '03.',
             heading: 'We`ll deliver it to your home',
             desc: 'We arrange all the paperwork, registration and delivery. All you need to do is enjoy your new car.',
-            img: 'public/img/how-it-works-mobile-3-2x.webp'
+            img: '/img/how-it-works-mobile-3-2x.webp'
         }
     ];
 
