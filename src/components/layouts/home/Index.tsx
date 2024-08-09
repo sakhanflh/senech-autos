@@ -8,6 +8,8 @@ import { SwiperClass } from "swiper/react";
 import UtilityQa from "../../elements/utility/UtilityQa";
 import HowDoesCard from "./HowDoesCard";
 import VideoCard from "./VideoCard";
+import InspectionsCard from "../../elements/Card/InspectionsCard";
+import DescInspections from "./DescInspections";
 
 const Index = () => {
     const swiperRef = useRef<SwiperClass | null>(null);
@@ -54,8 +56,23 @@ const Index = () => {
                         Want to know more?
                     </button>
                     <div className="mt-20 px-[5%]">
-                        <VideoCard src={'/img/Carvago _ You choose your car online. We inspect it and deliver it..mp4'}/>
+                        <VideoCard src={'/img/Carvago _ You choose your car online. We inspect it and deliver it..mp4'} />
                     </div>
+                </div>
+            </section>
+
+            <section className="flex relative mt-20 xl:flex-row items-center justify-center">
+                <div className="inspec-triangle"></div>
+                <div className="xl:w-[60%] flex flex-col bg-green-300">
+                    <div>
+                        <InspectionsCard />
+                    </div>
+                    <div className="bg-red-500 items-center flex justify-center z-10">
+                        <h1>Hello World</h1>
+                    </div>
+                </div>
+                <div className="xl:w-[40%]">
+                    <DescInspections />
                 </div>
             </section>
         </main>

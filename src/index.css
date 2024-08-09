@@ -54,3 +54,64 @@
     }
 }
 /* Section How Does It Works End */
+
+/* Youtube */
+.pb-56-25 {
+    padding-bottom: 56.25%;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.bottom-4 {
+    bottom: 1rem;
+}
+
+.right-4 {
+    right: 1rem;
+}
+
+.w-1/4 {
+    width: 25%;
+}
+
+.h-1/4 {
+    height: 25%;
+}
+
+/* Youtube End */
+
+/* Inspections Triangle */
+.inspec-triangle {
+    position: absolute;
+    width: 40rem;
+    height: 42rem;
+    clip-path: polygon(0 0, 60% 0, 100% 95%, 0 100%);
+    left: 0;
+    top: -70px;
+    overflow: visible;
+    background-color: rgb(148 163 164);
+
+}
+
+.inspec-triangle::before {
+    content: ''; /* Make sure content is defined */
+    position: absolute;
+    top: 0; /* Adjust to make the ::before element larger and move it upwards */
+    left: 0;
+    width: 90rem;
+    height: 40rem; /* Set the desired height */
+    clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
+    background-color: #EDF1F8;
+    z-index: 0; /* Place it behind the main element */
+}
+
+
+
+
+/* Inspections Triangle End */
+
+.custom-pag-inspection {
+    padding-top: 20px; /* Sesuaikan dengan kebutuhan */
+}

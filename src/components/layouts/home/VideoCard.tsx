@@ -1,6 +1,5 @@
 // src/components/VideoCard.tsx
 import React, { useState, useRef } from 'react';
-import { FaPlay } from 'react-icons/fa';
 
 interface VideoPlayerProps {
     src: string;
@@ -35,7 +34,7 @@ const VideoCard: React.FC<VideoPlayerProps> = ({
     };
 
     return (
-        <div className="relative xl:hover:scale-110">
+        <div className="relative">
             <video
                 ref={videoRef}
                 controls={controls}
@@ -55,7 +54,27 @@ const VideoCard: React.FC<VideoPlayerProps> = ({
                     className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 cursor-pointer"
                     onClick={handlePlay}
                 >
-                    <FaPlay className="text-white text-6xl" />
+                    {/* <FaPlay className="text-white text-6xl" /> */}
+                    <div className={`relative w-full h-full`}>
+                        <img src="/img/howItWorksBannerBig.1d6c0104.webp" alt="Video Thumbnail" className="w-full h-full object-cover" />
+                        <button
+                            className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white"
+                            onClick={() => setIsPlaying(true)}
+                        >
+                            <div className="bg-white rounded-full p-4">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    className="w-8 h-8 text-orange-500"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-5.197-2.598A1 1 0 008 9.423v5.154a1 1 0 001.555.832l5.197-2.598a1 1 0 000-1.79z" />
+                                </svg>
+                            </div>
+                            <span className="ml-4 text-lg font-bold">Play video</span>
+                        </button>
+                    </div>
                 </div>
             )}
         </div>
