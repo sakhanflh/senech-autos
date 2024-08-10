@@ -10,7 +10,7 @@ const Navbar = ({ styleParent, styleChild }: navProps) => {
             <Link className={styleChild} to={'/'}>Home</Link>
             <Link className={styleChild} to={'/buy'}>Buy</Link>
             <Link className={styleChild} to={'/howitworks'}>How it works</Link>
-            <Link className={styleChild} to={'/review'}>Review</Link>
+            <Link className={styleChild} to={'/reviews'}>Review</Link>
             <Link className={styleChild} to={'/services'}>Services</Link>
         </nav>
     )

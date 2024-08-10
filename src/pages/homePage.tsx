@@ -5,10 +5,8 @@ import Index from '../components/layouts/home/Index'
 export default function HomePage() {
     return (
         <Layout>
-            <main>
-                <Header />
-                <Index/>
-            </main>
+            <Header />
+            <Index />
         </Layout>
     )
 }
