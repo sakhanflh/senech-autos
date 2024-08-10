@@ -61,14 +61,25 @@ const Index = () => {
                 </div>
             </section>
 
-            <section className="flex relative mt-20 xl:flex-row items-center justify-center">
+            <section className="flex flex-col p-[5%] xl:p-0 relative mt-20 xl:h-[38rem] overflow-hidden xl:flex-row items-center justify-around">
                 <div className="inspec-triangle"></div>
-                <div className="xl:w-[60%] flex flex-col bg-green-300">
+                <div className="xl:w-[50%] flex flex-col">
                     <div>
                         <InspectionsCard />
                     </div>
-                    <div className="bg-red-500 items-center flex justify-center z-10">
-                        <h1>Hello World</h1>
+                    <div className="items-center flex gap-3 flex-col justify-center z-10">
+                        <h1 className="text-xs font-bold text-gray-600">IN COOPERATION WITH</h1>
+                        <div className="flex items-center gap-5 grayscale">
+                            <div className="w-14">
+                                <img src="/img/pirelli.png" alt="pirelli" />
+                            </div>
+                            <div className="w-7">
+                                <img src="/img/Senech-blue-secondary.png" alt="senech" />
+                            </div>
+                            <div className="w-14">
+                                <img src="/img/dekra.png" alt="dekra" />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="xl:w-[40%]">

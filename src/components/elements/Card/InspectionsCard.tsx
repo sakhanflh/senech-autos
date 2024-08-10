@@ -12,10 +12,20 @@ import 'swiper/css/scrollbar';
 import { inspectionsData } from '../../data/InspectionsData';
 import Slider from '../../util/Slider';
 
+const getBgColor = (color: string) => {
+    switch (color) {
+        case 'dark': return 'bg-dark';
+        case 'primary': return 'bg-primary';
+        case 'secondary': return 'bg-secondary';
+        case 'tertiary': return 'bg-tertiary';
+        default: return '';
+    }
+};
+
 const RatingBar = ({ ratings }: { ratings: string[] }) => (
     <div className="w-20 h-2 flex justify-around">
-        {ratings.map((color, i) => (
-            <div key={i} className={`w-3 h-full rounded-md bg-${color}`}></div>
+        {ratings?.map((color, i) => (
+            <div key={i} className={`w-3 h-full rounded-md ${getBgColor(color)}`}></div>
         ))}
     </div>
 );
@@ -41,14 +51,14 @@ const InspectionsCard: React.FC = () => {
         setData(inspectionsData);
     }, []);
 
-    const slides = data.map((inspection, i) => (
+    const slides = data?.map((inspection, i) => (
         <SwiperSlide key={i}>
             <div className="flex flex-col items-center justify-center text-dark ">
-                <div className="py-3 flex w-[26rem] bg-slate-100 items-center justify-around rounded-md shadow-2xl">
-                    <article className="w-[65%] px-5">
+                <div className="py-3 flex w-72 xl:w-[26rem] bg-slate-100 items-center justify-around rounded-t-lg shadow-2xl">
+                    <article className="xl:w-[65%] px-5">
                         <p className="line-clamp-3 text-xs font-medium"><i>{inspection.review}</i></p>
                     </article>
-                    <aside className="w-[30%] flex flex-col border-l px-5">
+                    <aside className="xl:w-[30%] flex flex-col border-l px-5">
                         <div className="w-6 h-6 rounded-full overflow-hidden mb-1">
                             <img src={inspection.reviewerImage} alt={inspection.reviewerName} className="w-full h-full object-cover" />
                         </div>
@@ -57,7 +67,7 @@ const InspectionsCard: React.FC = () => {
                     </aside>
                 </div>
 
-                <div className="rounded-xl overflow-hidden w-[30rem] bg-white shadow-2xl ">
+                <div className="rounded-xl overflow-hidden w-[22rem] xl:w-[30rem] bg-white shadow-2xl ">
                     <div className="flex border-b items-center border-slate-500 border-opacity-40">
                         <aside className="w-1/3">
                             <img src={inspection.carImage} alt={inspection.carName} />
@@ -85,14 +95,10 @@ const InspectionsCard: React.FC = () => {
     const settings = {
         modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
         loop: true,
-        navigation: {
-            prevEl: '.custom-prev',
-            nextEl: '.custom-next',
-        },
         pagination: {
             clickable: true,
         },
-        // autoplay: true,
+        autoplay: true,
         slidesPerView: 1,
         spaceBetween: 30,
     };
@@ -100,7 +106,6 @@ const InspectionsCard: React.FC = () => {
     return (
         <div className="relative">
             <Slider slides={slides} settings={settings} ref={swiperRef} />
-            <div className="custom-pag-inpection mt-4"></div>
         </div>
     );
 };

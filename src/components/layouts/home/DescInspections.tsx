@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const DescInspections = () => {
     return (
-        <article className="pr-[30%] text-dark">
+        <article className="text-dark xl:pr-40">
             <div className="">
                 <h1 className="font-semibold text-4xl  mb-5">A thorough car inspection - CarAudit™️</h1>
                 <p className="mb-5 text-sm ">A qualified mechanic will thoroughly inspect your chosen car. You will receive a detailed report about the technical condition of the car, photo documentation, and our advice. You just take your time and decide.</p>
